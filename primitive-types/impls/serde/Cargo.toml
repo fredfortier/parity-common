@@ -12,7 +12,8 @@ default = ["std"]
 std = ["serde/std"]
 
 [dependencies]
-serde = { version = "1.0.101", default-features = false, features = ["alloc"] }
+serde = { git = "https://github.com/mesalock-linux/serde-sgx", default-features = false, features = ["alloc"] }
+# serde = { version = "1.0.101", default-features = false, features = ["alloc"] }
 
 [dev-dependencies]
 criterion = "0.3.0"
